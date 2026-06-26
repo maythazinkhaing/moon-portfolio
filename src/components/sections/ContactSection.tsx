@@ -1,3 +1,4 @@
+import { type ComponentType } from 'react';
 import { contact, type ContactLink } from '../../data/content';
 import { BriefcaseIcon, LinkedInIcon, MailIcon } from '../Icons';
 
@@ -7,7 +8,7 @@ const TILE: Record<ContactLink['tile'], string> = {
   gradient: 'bg-[image:linear-gradient(135deg,var(--accent),var(--accent2))]',
 };
 
-const ICON: Record<ContactLink['icon'], (p: { className?: string }) => JSX.Element> = {
+const ICON: Record<ContactLink['icon'], ComponentType<{ className?: string }>> = {
   mail: MailIcon,
   linkedin: LinkedInIcon,
   briefcase: BriefcaseIcon,
