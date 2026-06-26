@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[data-theme="night"] {
+  --ink: #fbf6ff;
+  --soft: rgba(251, 246, 255, 0.72);
+  --glass: rgba(74, 62, 128, 0.32);
+  --gline: rgba(255, 255, 255, 0.3);
+  --gsh: rgba(18, 10, 46, 0.5);
+  --accent: #ff9ec4;
+  --accent2: #b6a6f5;
+  --chip: rgba(255, 255, 255, 0.14);
+  --bar: rgba(46, 38, 92, 0.5);
+  --card: rgba(255, 255, 255, 0.07);
+}
+
+[data-theme="sunset"] {
+  --ink: #6a4f86;
+  --soft: rgba(106, 79, 134, 0.78);
+  --glass: rgba(255, 255, 255, 0.5);
+  --gline: rgba(255, 255, 255, 0.85);
+  --gsh: rgba(170, 130, 190, 0.32);
+  --accent: #ff86ad;
+  --accent2: #a67ef0;
+  --chip: rgba(255, 255, 255, 0.55);
+  --bar: rgba(255, 255, 255, 0.55);
+  --card: rgba(255, 255, 255, 0.42);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Quicksand", ui-rounded, system-ui, sans-serif;
+  overflow: hidden;
+}
+
+/* Cute slim scrollbars inside the tab windows */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 130, 200, 0.4);
+  border-radius: 8px;
+}
